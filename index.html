@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cigar list</title>
+  <title>Cigar Menu</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <main class="container">
-    <h1>Cigar Listings</h1>
-    <p class="hint">Share this single link; edit <code>data/listings.json</code> to update prices.</p>
+    <h1>Cigar Menu</h1>
+    
 
     <section id="boxes">
       <h2>Boxes</h2>
@@ -23,9 +23,9 @@
 
     <footer>
       <small>Edit <code>data/listings.json</code> and push to GitHub to update this page.</small>
+    <footer>
+      <small class="muted">Prices updated regularly.</small>
     </footer>
-  </main>
-
   <script>
     async function load() {
       const res = await fetch('data/listings.json');

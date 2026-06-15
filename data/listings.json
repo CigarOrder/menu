@@ -1,0 +1,36 @@
+{
+  "boxes": [
+    {"name":"Trinidad La Trova LCDH","prices":[{"label":"box of 12","price":"£1060"}]},
+    {"name":"Trinidad Reyes","prices":[{"label":"box of 12","price":"£340"},{"label":"box of 24","price":"£640"}]},
+    {"name":"Trinidad Vigía","prices":[{"label":"box of 12","price":"£610"}]},
+    {"name":"Trinidad Esmerelda","prices":[{"label":"box of 12","price":"£790"}]},
+
+    {"name":"Partagas Maestra Origen","prices":[{"label":"box of 20","price":"£1310"}]},
+    {"name":"Partagas Maestra Maestro","prices":[{"label":"box of 20","price":"£1390"}]},
+    {"name":"Partagas Maestra Rito","prices":[{"label":"box of 20","price":"£1450"}]},
+
+    {"name":"Romeo y Julieta Dianas","prices":[{"label":"box of 20","price":"£1042"}]},
+    {"name":"Romeo y Julieta Brillantes","prices":[{"label":"box of 18","price":"£1190"}]},
+    {"name":"Romeo y Julieta Hidalgos","prices":[{"label":"box of 20","price":"£1041"}]},
+    {"name":"Romeo y Julieta Wide Churchill","prices":[{"label":"box of 25","price":"£484"}]},
+    {"name":"Romeo y Julieta Churchills","prices":[{"label":"box of 25","price":"£840"}]},
+
+    {"name":"Cohiba Robusto","prices":[{"label":"Pack of 3","price":"£216"}]},
+    {"name":"Cohiba Panetelas","prices":[{"label":"box of 25","price":"£662"}]},
+    {"name":"Cohiba Siglo II","prices":[{"label":"box of 25","price":"£840"}]},
+
+    {"name":"Montecristo Brillantes Year of the Dragon","prices":[{"label":"box of 18","price":"£1480"}]},
+    {"name":"Montecristo No.3","prices":[{"label":"box of 25","price":"£398"}]},
+    {"name":"Montecristo Wide Edmundo","prices":[{"label":"box of 25","price":"£905"}]},
+    {"name":"Montecristo Double Edmundo","prices":[{"label":"box of 25","price":"£920"}]},
+    {"name":"Bolivar Royal Corona","prices":[{"label":"box of 25","price":"£635"}]}
+  ],
+  "sticks": [
+    {"name":"Romeo y Julieta Wide Churchill","price":"£19","unit":"per stick"},
+    {"name":"Cohiba Robusto","price":"£72","unit":"per stick"},
+    {"name":"Cohiba Siglo VI","price":"£90","unit":"per stick"},
+    {"name":"Montecristo No.4","price":"£18","unit":"per stick"},
+    {"name":"Montecristo No.2","price":"£30","unit":"per stick"},
+    {"name":"Hoyo De Monterrey Epicure No.2","price":"£27","unit":"per stick"}
+  ]
+}

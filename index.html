@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cigar list</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Cigar Listings</h1>
+    <p class="hint">Share this single link; edit <code>data/listings.json</code> to update prices.</p>
+
+    <section id="boxes">
+      <h2>Boxes</h2>
+      <div class="grid" id="boxes-list"></div>
+    </section>
+
+    <section id="sticks">
+      <h2>Sticks</h2>
+      <div class="grid" id="sticks-list"></div>
+    </section>
+
+    <footer>
+      <small>Edit <code>data/listings.json</code> and push to GitHub to update this page.</small>
+    </footer>
+  </main>
+
+  <script>
+    async function load() {
+      const res = await fetch('data/listings.json');
+      const data = await res.json();
+
+      const boxesEl = document.getElementById('boxes-list');
+      data.boxes.forEach(item => {
+        const card = document.createElement('div'); card.className = 'card';
+        card.innerHTML = `<h3>${item.name}</h3>${renderPrices(item.prices)}`;
+        boxesEl.appendChild(card);
+      });
+
+      const sticksEl = document.getElementById('sticks-list');
+      data.sticks.forEach(item => {
+        const card = document.createElement('div'); card.className = 'card';
+        card.innerHTML = `<h3>${item.name}</h3><p class="price">${item.price} ${item.unit||''}</p>`;
+        sticksEl.appendChild(card);
+      });
+    }
+
+    function renderPrices(prices){
+      return '<ul class="prices">' + prices.map(p => `<li><strong>${p.price}</strong> <span class="muted">${p.label}</span></li>`).join('') + '</ul>'
+    }
+
+    load().catch(err => {
+      console.error(err);
+      document.body.insertAdjacentHTML('beforeend', '<p class="error">Failed to load listings.json</p>');
+    });
+  </script>
+</body>
+</html>
